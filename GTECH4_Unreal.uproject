@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{DF31CBBB-4355-04B7-6B5D-AC8B84104316}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "GTECH4_Unreal",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
