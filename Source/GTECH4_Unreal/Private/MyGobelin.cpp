@@ -32,20 +32,13 @@ void AMyGobelin::BeginPlay()
 void AMyGobelin::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Ceci est un message à l'écran !"));
 }
 
 void AMyGobelin::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-    GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Ceci est un message à l'écran !"));
-
-    UE_LOG(LogTemp, Warning, TEXT("Collision détectée avec : %s"), *OtherActor->GetName());
-
     if (OtherActor)
     {
         AMyEnviro* envirro = Cast<AMyEnviro>(OtherActor);
-
-        UE_LOG(LogTemp, Warning, TEXT("Collision détectée avec : %s"), *OtherActor->GetName());
 
         if (envirro)
         {
